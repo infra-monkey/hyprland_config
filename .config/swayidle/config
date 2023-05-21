@@ -1,0 +1,5 @@
+timeout 300 'swaylock -i /usr/share/wallpapers/openSUSEtumbleweed-1920x1080.jpg' resume 'hyprctl dispatch dpms on && .config/waybar/waybar.sh'
+timeout 310 'hyprctl dispatch dpms off'
+before-sleep 'hyprctl dispatch dpms off'
+before-sleep 'swaylock -i /usr/share/wallpapers/openSUSEtumbleweed-1920x1080.jpg'
+after-resume 'hyprctl dispatch dpms on && .config/waybar/waybar.sh'
