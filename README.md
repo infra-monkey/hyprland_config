@@ -8,14 +8,12 @@ sudo zypper install hyprland kitty alacritty fish sddm qt5-wayland qt6-wayland p
 ```
 
 Enabled extra repo for waybar-hyprland and install it.
-
 ```
 sudo zypper ar -f https://download.opensuse.org/repositories/home:/tea_moe/openSUSE_Tumbleweed/ "tea_moe"
 sudo zypper install waybar-hyprland
 ```
 
 Install xdg-desktop-portal-hyprland
-
 ```
 git clone https://github.com/hyprwm/xdg-desktop-portal-hyprland.git
 cd xdg-desktop-portal-hyprland/
@@ -26,3 +24,10 @@ meson build --prefix=/usr
 ```
 
 Copy the .config to your home directory
+
+Reboot and log to hyprland
+
+Enable flatpak apps
+```
+sudo zypper in flatpak
+```
