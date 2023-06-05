@@ -6,7 +6,7 @@
 
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "custom/spotify", "custom/storage", "wireplumber", "network", "cpu", "memory", "clock"],
+    "modules-right": ["tray", "custom/spotify", "custom/storage", "wireplumber", "network", "cpu", "memory", "keyboard-state", "clock"],
     "wlr/workspaces": {
         "format": "{name}",
         "disable-scroll": true,
@@ -30,7 +30,7 @@
             "ethernet": [""],
             "disconnected": [""]
         },
-        "on-click": "kitty -e nmtui",
+        "on-click": "alacritty -e nmtui",
     "tooltip": false
     },
     "wireplumber": {
@@ -63,6 +63,15 @@
         "interval": 30,
         "format": " {}%",
         "max-length": 10
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
     },
     "tray": {
         "icon-size": 18
