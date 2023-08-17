@@ -1,8 +1,7 @@
 {
-    "layer": "bottom",
+    "layer": "top",
     "position": "top",
     "height": 30,
-    "mode": "dock",
 
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["hyprland/window"],
@@ -26,16 +25,16 @@
         "format-alt": "{ipaddr}/{cidr} {icon}",
         "format-alt-click": "click-right",
         "format-icons": {
-            "wifi": ["", "" ,""],
+            "wifi": ["", "f6ab" ,""],
             "ethernet": [""],
-            "disconnected": [""]
+            "disconnected": [""]
         },
         "on-click": "alacritty -e nmtui",
     "tooltip": false
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
-        "format-muted": "",
+        "format-muted": "",
         "on-click": "helvum",
         "format-icons": ["", "", ""],
     },
