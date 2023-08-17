@@ -5,7 +5,7 @@
 
     "modules-left": ["wlr/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "custom/spotify", "custom/storage", "wireplumber", "network", "cpu", "memory", "keyboard-state", "clock"],
+    "modules-right": ["tray", "custom/spotify", "custom/storage", "network", "wireplumber", "cpu", "memory", "keyboard-state", "clock"],
     "wlr/workspaces": {
         "format": "{name}",
         "disable-scroll": true,
