@@ -55,11 +55,6 @@ window#waybar.solo {
     min-width:  70px;
 }
 
-#keyboard-state {
-    margin:     0px 2px 0px 2px;
-    min-width:  120px;
-}
-
 #clock {
     margin:     0px 16px 0px 10px;
     min-width:  140px;
