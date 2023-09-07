@@ -3,25 +3,13 @@
     "position": "top",
     "height": 30,
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["wlr/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "custom/spotify", "custom/storage", "wireplumber", "cpu", "memory", "keyboard-state", "clock"],
-    "hyprland/workspaces": {
-        "format": "{name} {icon}",
+    "modules-right": ["tray", "custom/spotify", "custom/storage", "network", "wireplumber", "cpu", "memory", "keyboard-state", "clock"],
+    "wlr/workspaces": {
+        "format": "{name}",
         "disable-scroll": true,
-        "on-click": "activate",
-        "format-icons": {
-		"1": "",
-		"2": "",
-		"3": "",
-		"4": "",
-		"5": "",
-		"6": "",
-		"7": "",
-		"8": "",
-		"9": ""
-      	},
-      	"sort-by-number": true
+        "on-click": "activate"
     },
     "hyprland/window": {
         "format": "{}",
@@ -31,6 +19,18 @@
     "clock": {
         "format": "{:%a %d %b %H:%M}",
         "tooltip": false
+    },
+    "network": {
+        "format": "{icon}",
+        "format-alt": "{ipaddr}/{cidr} {icon}",
+        "format-alt-click": "click-right",
+        "format-icons": {
+            "wifi": ["", "f6ab" ,""],
+            "ethernet": [""],
+            "disconnected": [""]
+        },
+        "on-click": "alacritty -e nmtui",
+    "tooltip": false
     },
     "wireplumber": {
         "format": "{icon} {volume}%",
