@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Suspend To Ram
+Comment=Suspend the system to ram
+GenericName=Suspend
+Keywords=Sleep
+Exec=systemctl suspend
+Icon=system-shutdown-symbolic
+Type=Application
+Categories=System
+X-Desktop-File-Install-Version=0.1

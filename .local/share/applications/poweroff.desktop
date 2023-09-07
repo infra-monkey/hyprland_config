@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Shut Down
+Comment=Shut down the system
+GenericName=Shut Down
+Keywords=Poweroff;Power Off;Stop;Shutdown
+Exec=systemctl poweroff
+Icon=system-shutdown-symbolic
+Type=Application
+Categories=System
+X-Desktop-File-Install-Version=0.1

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Log Out
+Comment=Log out of the current desktop session
+GenericName=Log Out
+Keywords=Logout;Exit
+Exec=hyprctl dispatch exit
+Icon=system-shutdown-symbolic
+Type=Application
+Categories=System
+X-Desktop-File-Install-Version=0.1

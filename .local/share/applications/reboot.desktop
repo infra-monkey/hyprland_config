@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Restart
+Comment=Restart the system
+GenericName=Restart
+Keywords=Reboot
+Exec=systemctl reboot
+Icon=system-shutdown-symbolic
+Type=Application
+Categories=System
+X-Desktop-File-Install-Version=0.1
