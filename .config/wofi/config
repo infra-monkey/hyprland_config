@@ -4,6 +4,5 @@ term=foot
 allow_images=true
 hide_scroll=true
 insensitive=true
-prompt=
 height=30%
 width=40%
