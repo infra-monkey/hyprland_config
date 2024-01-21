@@ -5,7 +5,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "custom/spotify", "custom/storage", "wireplumber", "cpu", "memory", "keyboard-state", "clock"],
+    "modules-right": ["tray", "custom/spotify", "wireplumber", "custom/storage", "cpu", "memory", "keyboard-state", "clock"],
     "hyprland/workspaces": {
         "format": "{name} {icon}",
         "disable-scroll": true,
@@ -25,7 +25,7 @@
     },
     "hyprland/window": {
         "format": "{}",
-        "max-length": 80,
+        "max-length": 40,
         "tooltip": false
     },
     "clock": {
@@ -35,11 +35,12 @@
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-muted": "",
-        "on-click": "helvum",
-        "format-icons": ["", "", ""],
+        "on-click": "pavucontrol",
+        "format-icons": ["", "", ""]
     },
     "custom/spotify": {
         "interval": 1,
+        "max-length": 40,
         "return-type": "json",
         "exec": "~/.config/waybar/modules/spotify.sh",
         "exec-if": "pgrep spotify",
