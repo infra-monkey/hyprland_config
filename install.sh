@@ -25,7 +25,11 @@ case "${1}" in
         createSymlink "$HOME/.config/swayidle" "$SOURCE_DIR/.config/swayidle"
         createSymlink "$HOME/.config/wofi" "$SOURCE_DIR/.config/wofi"
         createSymlink "$HOME/.config/fish" "$SOURCE_DIR/.config/fish"
-        # createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
+        createSymlink "$HOME/.local/share/applications/logout.desktop" "$SOURCE_DIR/.local/share/applications/logout.desktop"
+        createSymlink "$HOME/.local/share/applications/poweroff.desktop" "$SOURCE_DIR/.local/share/applications/poweroff.desktop"
+        createSymlink "$HOME/.local/share/applications/reboot.desktop" "$SOURCE_DIR/.local/share/applications/reboot.desktop"
+        createSymlink "$HOME/.local/share/applications/suspend.desktop" "$SOURCE_DIR/.local/share/applications/suspend.desktop"
+        createSymlink "$HOME/.local/share/applications/com.slack.Slack.desktop" "$SOURCE_DIR/.local/share/applications/com.slack.Slack.desktop"
         # createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
         ;;
     *)
