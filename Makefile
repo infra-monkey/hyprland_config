@@ -28,8 +28,11 @@ runtime-deps:
 	sudo zypper install ${RUNTIME_DEPS}
 
 config:
+	mkdir -p ~/.local/share/applications
 	./install.sh init
-	sudo systemctl set-default graphical
+	# sudo systemctl enable sddm.service
+	# sudo systemctl set-default graphical
+	sudo cp -f resources/hyprland.ld.conf /etc/ld.so.conf.d/hyprland.conf
 
 hyprland:
 	rm -rf ${TMP_DIR}/Hyprland
