@@ -43,4 +43,5 @@ make hyprlang xdph hyprland
 ```
 make runtime-deps
 make config
+
 ```
