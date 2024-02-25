@@ -6,6 +6,8 @@ XDPH_SOURCE="https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
 XDPH_VERSION="v1.3.1"
 HYPRLAND_DEPS=gcc-c++ git meson cmake "pkgconfig(cairo)" "pkgconfig(egl)" "pkgconfig(gbm)" "pkgconfig(gl)" "pkgconfig(glesv2)" "pkgconfig(libdrm)" "pkgconfig(libinput)" "pkgconfig(libseat)" "pkgconfig(libudev)" "pkgconfig(pango)" "pkgconfig(pangocairo)" "pkgconfig(pixman-1)" "pkgconfig(vulkan)" "pkgconfig(wayland-client)" "pkgconfig(wayland-protocols)" "pkgconfig(wayland-scanner)" "pkgconfig(wayland-server)" "pkgconfig(xcb)" "pkgconfig(xcb-icccm)" "pkgconfig(xcb-renderutil)" "pkgconfig(xkbcommon)" "pkgconfig(xwayland)" "pkgconfig(xcb-errors)" glslang-devel Mesa-libGLESv3-devel tomlplusplus-devel
 HYPRLANG_DEPS=qt6-widgets-devel
+XDPH_DEPS=pipewire-devel
+RUNTIME_DEPS="hyprpaper alacritty fish sddm qt5-wayland qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet"
 TMP_DIR=/tmp/hypr-build
 
 clean:
@@ -17,7 +19,13 @@ hyprland-deps:
 hyprlang-deps:
 	sudo zypper install ${HYPRLANG_DEPS}
 
-build-deps: hyprland-deps hyprlang-deps
+xdph-deps:
+	sudo zypper install ${XDPH_DEPS}
+
+build-deps: hyprland-deps hyprlang-deps xdph-deps
+
+runtime-deps:
+	sudo zypper install ${RUNTIME_DEPS}
 
 config:
 	./install.sh init
