@@ -7,7 +7,7 @@ XDPH_VERSION="v1.3.1"
 HYPRLAND_DEPS=gcc-c++ git meson cmake "pkgconfig(cairo)" "pkgconfig(egl)" "pkgconfig(gbm)" "pkgconfig(gl)" "pkgconfig(glesv2)" "pkgconfig(libdrm)" "pkgconfig(libinput)" "pkgconfig(libseat)" "pkgconfig(libudev)" "pkgconfig(pango)" "pkgconfig(pangocairo)" "pkgconfig(pixman-1)" "pkgconfig(vulkan)" "pkgconfig(wayland-client)" "pkgconfig(wayland-protocols)" "pkgconfig(wayland-scanner)" "pkgconfig(wayland-server)" "pkgconfig(xcb)" "pkgconfig(xcb-icccm)" "pkgconfig(xcb-renderutil)" "pkgconfig(xkbcommon)" "pkgconfig(xwayland)" "pkgconfig(xcb-errors)" glslang-devel Mesa-libGLESv3-devel tomlplusplus-devel "pkgconfig(libdisplay-info)"
 HYPRLANG_DEPS=qt6-widgets-devel
 XDPH_DEPS=pipewire-devel
-RUNTIME_DEPS=hyprpaper alacritty fish sddm qt5-wayland qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet
+RUNTIME_DEPS=hyprpaper xdg-user-dirs alacritty fish greetd gtkgreet qt5-wayland qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet sensors blueman
 TMP_DIR=/tmp/hypr-build
 
 clean:
@@ -30,9 +30,10 @@ runtime-deps:
 config:
 	mkdir -p ~/.local/share/applications
 	./install.sh init
-	# sudo systemctl enable sddm.service
-	# sudo systemctl set-default graphical
+	sudo systemctl enable greetd.service
+	sudo systemctl set-default graphical
 	sudo cp -f resources/hyprland.ld.conf /etc/ld.so.conf.d/hyprland.conf
+	sudo cp -rf resources/greetd/* /etc/greetd
 
 hyprland:
 	rm -rf ${TMP_DIR}/Hyprland
