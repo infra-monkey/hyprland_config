@@ -49,17 +49,17 @@ case $1 in
         if [ ! "$selected" ]; then
             echo "No wallpaper selected"
             exit
-	else
-	    echo "Selected wallpaper: ${selected}"
+        else
+            echo "Selected wallpaper: ${selected}"
         fi
         wal -q -i $wallpaper_dir/$selected
-	ln -vsf $(cat ~/.cache/wal/wal) $wallpaper_dir/current_wallpaper
+	    ln -vsf $(cat ~/.cache/wal/wal) $wallpaper_dir/current_wallpaper
     ;;
 
     # Randomly select wallpaper 
     *)
         wal -q -i $wallpaper_dir
-	ln -vsf $(cat ~/.cache/wal/wal) $wallpaper_dir/current_wallpaper
+	    ln -vsf $(cat ~/.cache/wal/wal) $wallpaper_dir/current_wallpaper
     ;;
 
 esac

@@ -35,6 +35,8 @@ config:
 	sudo cp -f resources/hyprland.ld.conf /etc/ld.so.conf.d/hyprland.conf
 	sudo cp -rf resources/greetd/* /etc/greetd
 
+runtime: runtime-deps config
+
 hyprland:
 	rm -rf ${TMP_DIR}/Hyprland
 	git clone --recursive -b ${HYPRLAND_VERSION} ${HYPRLAND_SOURCE} ${TMP_DIR}/Hyprland
