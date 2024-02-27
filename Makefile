@@ -1,7 +1,7 @@
 HYPRLAND_SOURCE="https://github.com/hyprwm/Hyprland.git"
 HYPRLAND_VERSION="v0.35.0"
 HYPRLANG_SOURCE="https://github.com/hyprwm/hyprlang.git"
-HYPRLANG_VERSION="v0.3.2"
+HYPRLANG_VERSION="v0.4.0"
 XDPH_SOURCE="https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
 XDPH_VERSION="v1.3.1"
 HYPRLAND_DEPS=gcc-c++ git meson cmake "pkgconfig(cairo)" "pkgconfig(egl)" "pkgconfig(gbm)" "pkgconfig(gl)" "pkgconfig(glesv2)" "pkgconfig(libdrm)" "pkgconfig(libinput)" "pkgconfig(libseat)" "pkgconfig(libudev)" "pkgconfig(pango)" "pkgconfig(pangocairo)" "pkgconfig(pixman-1)" "pkgconfig(vulkan)" "pkgconfig(wayland-client)" "pkgconfig(wayland-protocols)" "pkgconfig(wayland-scanner)" "pkgconfig(wayland-server)" "pkgconfig(xcb)" "pkgconfig(xcb-icccm)" "pkgconfig(xcb-renderutil)" "pkgconfig(xkbcommon)" "pkgconfig(xwayland)" "pkgconfig(xcb-errors)" glslang-devel Mesa-libGLESv3-devel tomlplusplus-devel "pkgconfig(libdisplay-info)"
@@ -14,31 +14,31 @@ clean:
 	rm -rf ${TMP_DIR}
 
 hyprland-deps:
-	sudo zypper install ${HYPRLAND_DEPS}
+	sudo zypper install -y ${HYPRLAND_DEPS}
 
 hyprlang-deps:
-	sudo zypper install ${HYPRLANG_DEPS}
+	sudo zypper install -y ${HYPRLANG_DEPS}
 
 xdph-deps:
-	sudo zypper install ${XDPH_DEPS}
+	sudo zypper install -y ${XDPH_DEPS}
 
 build-deps: hyprland-deps hyprlang-deps xdph-deps
 
 runtime-deps:
-	sudo zypper install ${RUNTIME_DEPS}
+	sudo zypper install -y ${RUNTIME_DEPS}
 
 config:
 	mkdir -p ~/.local/share/applications
 	./install.sh init
 	sudo systemctl enable greetd.service
 	sudo systemctl set-default graphical
-	sudo cp -f resources/hyprland.ld.conf /etc/ld.so.conf.d/hyprland.conf
 	sudo cp -rf resources/greetd/* /etc/greetd
 
 runtime: runtime-deps config
 
 hyprland:
 	rm -rf ${TMP_DIR}/Hyprland
+	sudo cp -f resources/hyprland.ld.conf /etc/ld.so.conf.d/hyprland.conf
 	git clone --recursive -b ${HYPRLAND_VERSION} ${HYPRLAND_SOURCE} ${TMP_DIR}/Hyprland
 	cd ${TMP_DIR}/Hyprland && make all && sudo make install
 	rm -rf ${TMP_DIR}/Hyprland
