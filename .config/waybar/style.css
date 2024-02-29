@@ -18,11 +18,11 @@
 @define-color backgrounddark #404040;
 @define-color workspacesbackground1 #000000;
 @define-color workspacesbackground2 #7a6105;
-@define-color workspacesbackground3 #ffff00;
+@define-color workspacesbackground3 #ffffb3;
+/*@define-color workspacesbackground3 #ffff00;*/
 @define-color bordercolor @foreground;
 @define-color textcolor0 #000000;
 @define-color textcolor1 #ffff00;
-/*@define-color iconcolor #cccc00;*/
 @define-color iconcolor #ffffb3;
 
 /* -----------------------------------------------------
