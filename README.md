@@ -40,6 +40,13 @@ make hyprlang xdph hyprland
 
 ## Hyprland ecosystem
 
+install nwg-look from https://build.opensuse.org/package/show/home:smolsheep/nwg-look
+
+install Nordic theme (in .themes)
+install candy-icons theme (in .icons)
+install Bibata-Modern-Classic cursor theme (in .icons)
+configure themes.
+
 ```
 make runtime-deps
 make config
