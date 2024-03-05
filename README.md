@@ -35,7 +35,7 @@ cd src
 git clone https://github.com/infra-monkey/hyprland_config.git
 cd hyprland_config
 make build-deps
-make hyprlang xdph hyprland
+make hyprlang xdph hyprland hyprpaper
 ```
 
 ## Hyprland ecosystem
