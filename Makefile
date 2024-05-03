@@ -1,7 +1,7 @@
 HYPRLAND_SOURCE="https://github.com/hyprwm/Hyprland.git"
 HYPRLAND_VERSION="v0.36.0"
 HYPRLANG_SOURCE="https://github.com/hyprwm/hyprlang.git"
-HYPRLANG_VERSION="v0.4.1"
+HYPRLANG_VERSION="v0.5.0"
 HYPRPAPER_SOURCE="https://github.com/hyprwm/hyprpaper.git"
 HYPRPAPER_VERSION="v0.6.0"
 XDPH_SOURCE="https://github.com/hyprwm/xdg-desktop-portal-hyprland.git"
@@ -10,7 +10,7 @@ HYPRLAND_DEPS=gcc-c++ git meson cmake "pkgconfig(cairo)" "pkgconfig(egl)" "pkgco
 HYPRLANG_DEPS=qt6-widgets-devel
 HYPRPAPER_DEPS=file-devel libwebp-devel libjpeg8-devel
 XDPH_DEPS=pipewire-devel
-RUNTIME_DEPS=hyprpaper xdg-user-dirs alacritty fish greetd gtkgreet qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet sensors blueman qt6ct kvantum-qt6 kvantum-manager kvantum-themes fontawesome-fonts
+RUNTIME_DEPS=hyprpaper xdg-user-dirs alacritty fish greetd gtkgreet qt6-wayland polkit-kde-agent-6 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet sensors blueman qt6ct kvantum-qt6 kvantum-manager kvantum-themes fontawesome-fonts
 APPLICATIONS=dolphin firefox thunderbird 
 TMP_DIR=/tmp/hypr-build
 
