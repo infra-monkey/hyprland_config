@@ -10,7 +10,7 @@ HYPRLAND_DEPS=gcc-c++ git meson cmake "pkgconfig(cairo)" "pkgconfig(egl)" "pkgco
 HYPRLANG_DEPS=qt6-widgets-devel
 HYPRPAPER_DEPS=file-devel libwebp-devel libjpeg8-devel
 XDPH_DEPS=pipewire-devel
-RUNTIME_DEPS=hyprland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper xdg-user-dirs alacritty fish greetd gtkgreet qt6-wayland polkit-kde-agent-6 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet sensors blueman qt6ct kvantum-qt6 kvantum-manager kvantum-themes fontawesome-fonts flatpak intel-vaapi-driver
+RUNTIME_DEPS=hyprland xdg-desktop-portal-hyprland hypridle hyprlock hyprpaper xdg-user-dirs alacritty fish greetd gtkgreet qt6-wayland polkit-kde-agent-6 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet sensors blueman qt6ct kvantum-qt6 kvantum-manager kvantum-themes fontawesome-fonts flatpak intel-vaapi-driver intel-media-driver at-spi2-core ffmpeg gstreamer-plugin-openh264 gstreamer-plugin-pipewire ladspa-rnnoise
 APPLICATIONS=dolphin firefox thunderbird ark kate okular podman xwaylandvideobridge
 TMP_DIR=/tmp/hypr-build
 

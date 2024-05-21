@@ -19,17 +19,20 @@ case "${1}" in
         echo "source dir = ${SOURCE_DIR}"
         createSymlink "$HOME/.config/hypr" "$SOURCE_DIR/.config/hypr"
         createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
-        createSymlink "$HOME/.config/wal/templates" "$SOURCE_DIR/.config/wal/templates"
         createSymlink "$HOME/.config/waybar" "$SOURCE_DIR/.config/waybar"
         createSymlink "$HOME/.config/mako" "$SOURCE_DIR/.config/mako"
         createSymlink "$HOME/.config/swayidle" "$SOURCE_DIR/.config/swayidle"
         createSymlink "$HOME/.config/wofi" "$SOURCE_DIR/.config/wofi"
         createSymlink "$HOME/.config/fish" "$SOURCE_DIR/.config/fish"
+        createSymlink "$HOME/.config/pipewire" "$SOURCE_DIR/.config/pipewire"
+        createSymlink "$HOME/.config/systemd" "$SOURCE_DIR/.config/systemd"
         createSymlink "$HOME/.local/share/applications/logout.desktop" "$SOURCE_DIR/.local/share/applications/logout.desktop"
         createSymlink "$HOME/.local/share/applications/poweroff.desktop" "$SOURCE_DIR/.local/share/applications/poweroff.desktop"
         createSymlink "$HOME/.local/share/applications/reboot.desktop" "$SOURCE_DIR/.local/share/applications/reboot.desktop"
         createSymlink "$HOME/.local/share/applications/suspend.desktop" "$SOURCE_DIR/.local/share/applications/suspend.desktop"
         # createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
+        systemctl --user daemon-reload
+        systemctl --user enable pipewire-input-filter-chain.service
         ;;
     *)
         echo "Missing argument"
