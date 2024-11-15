@@ -41,7 +41,7 @@ mods = "Shift"
 history = 10000
 multiplier = 1
 
-[shell]
+[terminal.shell]
 args = ["--login"]
 program = "/usr/bin/fish"
 
@@ -49,3 +49,5 @@ program = "/usr/bin/fish"
 dynamic_title = true
 dynamic_padding = false
 padding = { x = 8, y = 5 }
+
+[terminal]
