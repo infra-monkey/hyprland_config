@@ -4,8 +4,10 @@ Install opensuse tumbleweed KDE edition
 
 Install Hyprland package and dependencies
 ```
-sudo zypper install hyprland xdg-desktop-portal-hyprland kitty alacritty fish sddm qt5-wayland qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet pipewire wireplumber
+sudo zypper install hyprland xdg-desktop-portal-hyprland kitty alacritty fish sddm qt5-wayland qt6-wayland polkit-kde-agent-5 htop gnome-keyring helvum swayidle swaylock wofi git waybar NetworkManager-applet pipewire wireplumber wl-clipboard
 ```
+
+install cliphist binary from github release
 
 Copy the .config to your home directory
 
