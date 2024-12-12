@@ -17,7 +17,8 @@
 @define-color backgroundlight #ffffb3;
 @define-color backgrounddark #404040;
 @define-color workspacesbackground1 #000000;
-@define-color workspacesbackground2 #7a6105;
+/*@define-color workspacesbackground2 #7a6105;*/
+@define-color workspacesbackground2 #0b0b0a;
 @define-color workspacesbackground3 #ffffb3;
 /*@define-color workspacesbackground3 #ffff00;*/
 @define-color bordercolor @foreground;
