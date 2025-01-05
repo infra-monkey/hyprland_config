@@ -18,10 +18,10 @@ case "${1}" in
     "init")
         echo "source dir = ${SOURCE_DIR}"
         createSymlink "$HOME/.config/hypr" "$SOURCE_DIR/.config/hypr"
+        createSymlink "$HOME/.config/hypr/conf.d/host-specific.conf" "$SOURCE_DIR/.config/hypr/conf.d/${HOSTNAME}/host-specific.conf"
         createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
         createSymlink "$HOME/.config/waybar" "$SOURCE_DIR/.config/waybar"
         createSymlink "$HOME/.config/mako" "$SOURCE_DIR/.config/mako"
-        createSymlink "$HOME/.config/swayidle" "$SOURCE_DIR/.config/swayidle"
         createSymlink "$HOME/.config/wofi" "$SOURCE_DIR/.config/wofi"
         createSymlink "$HOME/.config/fish" "$SOURCE_DIR/.config/fish"
         createSymlink "$HOME/.config/pipewire" "$SOURCE_DIR/.config/pipewire"

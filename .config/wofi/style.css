@@ -42,9 +42,9 @@ color: #282a36;
 color: #f8f8f2;
 }
 
-#entry:selected {
+/* #entry:selected {
 background-color: #44475a;
-}
+} */
 
 #entry:selected #text {
 font-weight: bold;
