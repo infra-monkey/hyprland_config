@@ -6,3 +6,5 @@ hide_scroll=true
 insensitive=true
 height=30%
 width=40%
+key_expand=Tab
+key_forward=Ctrl-Tab
