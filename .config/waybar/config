@@ -38,14 +38,6 @@
         "on-click": "pavucontrol",
         "format-icons": ["", "", ""]
     },
-    "custom/spotify": {
-        "interval": 1,
-        "max-length": 40,
-        "return-type": "json",
-        "exec": "~/.config/waybar/modules/spotify.sh",
-        "exec-if": "pgrep spotify",
-        "escape": true
-    },
     "custom/storage": {
         "format": " {}",
         "format-alt": " {percentage}%",
