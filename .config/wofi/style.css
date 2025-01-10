@@ -1,6 +1,6 @@
 window {
 margin: 0px;
-border: 1px solid #bd93f9;
+border: 1px solid #f8f80a;
 background-color: #282a36;
 }
 
@@ -42,11 +42,12 @@ color: #282a36;
 color: #f8f8f2;
 }
 
-/* #entry:selected {
+#entry:selected {
 background-color: #44475a;
-} */
+}
 
 #entry:selected #text {
 font-weight: bold;
+background-color: #44475a;
 }
 
