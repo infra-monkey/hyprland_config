@@ -30,7 +30,7 @@ case "${1}" in
         createSymlink "$HOME/.local/share/applications/poweroff.desktop" "$SOURCE_DIR/.local/share/applications/poweroff.desktop"
         createSymlink "$HOME/.local/share/applications/reboot.desktop" "$SOURCE_DIR/.local/share/applications/reboot.desktop"
         createSymlink "$HOME/.local/share/applications/suspend.desktop" "$SOURCE_DIR/.local/share/applications/suspend.desktop"
-        # createSymlink "$HOME/.config/alacritty" "$SOURCE_DIR/.config/alacritty"
+        createSymlink "$HOME/.local/share/applications/vlc.desktop" "$SOURCE_DIR/.local/share/applications/vlc.desktop"
         systemctl --user daemon-reload
         systemctl --user enable pipewire-input-filter-chain.service
         ;;
