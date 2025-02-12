@@ -25,7 +25,7 @@
     },
     "hyprland/window": {
         "format": "{}",
-        "max-length": 40,
+        "max-length": 120,
         "tooltip": false
     },
     "clock": {
