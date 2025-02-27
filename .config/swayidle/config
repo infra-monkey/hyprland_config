@@ -1,4 +1,0 @@
-timeout 300 'swaylock -i /usr/share/wallpapers/openSUSEtumbleweed-1920x1080.png'
-timeout 310 '.config/swayidle/scripts/hyprland-standby.sh' resume '.config/swayidle/scripts/hyprland-resume.sh'
-before-sleep '.config/swayidle/scripts/hyprland-standby.sh'
-after-resume '.config/swayidle/scripts/hyprland-resume.sh'
