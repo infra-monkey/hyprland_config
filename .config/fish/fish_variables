@@ -43,4 +43,4 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_prompt_pwd_dir_length:0
-SETUVAR fish_user_paths:/usr/local/go/bin\x1e/home/monkey/\x2elocal/go/bin
+SETUVAR fish_user_paths:/usr/local/go/bin\x1e/home/monkey/\x2elocal/go/bin\x1e/home/monkey/\x2elocal/bin
