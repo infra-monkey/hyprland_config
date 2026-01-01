@@ -35,7 +35,7 @@
     "wireplumber": {
         "format": "{icon} {volume}%",
         "format-muted": "",
-        "on-click": "pavucontrol",
+        "on-click": "hyprpwcenter",
         "format-icons": ["", "", ""]
     },
     "custom/storage": {
