@@ -4,38 +4,38 @@
 
 ---@module 'hl'
 
-local background = "rgb(0c040c)"
+global background = "rgb(0c040c)"
 
-local foreground = "rgb(b1c0f2)"
+global foreground = "rgb(b1c0f2)"
 
-local color0 = "rgb(ffff00)"
+global color0 = "rgb(ffff00)"
 
-local color1 = "rgb(cccc00)"
+global color1 = "rgb(cccc00)"
 
-local color2 = "rgb(4d4d00)"
+global color2 = "rgb(4d4d00)"
 
-local color3 = "rgb(8F3357)"
+global color3 = "rgb(8F3357)"
 
-local color4 = "rgb(AA4464)"
+global color4 = "rgb(AA4464)"
 
-local color5 = "rgb(59479F)"
+global color5 = "rgb(59479F)"
 
-local color6 = "rgb(C15C9E)"
+global color6 = "rgb(C15C9E)"
 
-local color7 = "rgb(b1c0f2)"
+global color7 = "rgb(b1c0f2)"
 
-local color8 = "rgb(7b86a9)"
+global color8 = "rgb(7b86a9)"
 
-local color9 = "rgb(59205C)"
+global color9 = "rgb(59205C)"
 
-local color10 = "rgb(614F69)"
+global color10 = "rgb(614F69)"
 
-local color11 = "rgb(8F3357)"
+global color11 = "rgb(8F3357)"
 
-local color12 = "rgb(AA4464)"
+global color12 = "rgb(AA4464)"
 
-local color13 = "rgb(59479F)"
+global color13 = "rgb(59479F)"
 
-local color14 = "rgb(C15C9E)"
+global color14 = "rgb(C15C9E)"
 
-local color15 = "rgb(b1c0f2)"
+global color15 = "rgb(b1c0f2)"

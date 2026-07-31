@@ -3,7 +3,6 @@
 -- Manual review may be needed for complex directives
 
 ---@module 'hl'
-
 hl.config({
     general = {
         -- See https://wiki.hyprland.org/Configuring/Variables/ for more
